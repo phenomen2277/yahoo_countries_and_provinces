@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-
+    #require the file
+    require "yahoo_countries_and_provinces"
+    
     #To get a list of the countries in english
     country_array = YahooCountriesAndStates::countries("en")
 
