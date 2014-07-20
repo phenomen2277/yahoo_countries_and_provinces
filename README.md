@@ -22,12 +22,12 @@ Or install it yourself as:
     require "yahoo_countries_and_provinces"
     
     #To get a list of the countries in english
-    country_array = YahooCountriesAndStates::countries("en")
+    country_array = YahooCountriesAndProvinces::countries("en")
 
     #To get a list of the countries in swedish
-    country_array = YahooCountriesAndStates::countries("sv")
+    country_array = YahooCountriesAndProvinces::countries("sv")
 
     #To get Germany's provinces in english
-    provinces_array = YahooCountriesAndStates::provinces("Germany", "en")
+    provinces_array = YahooCountriesAndProvinces::provinces("Germany", "en")
 
 
