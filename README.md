@@ -16,6 +16,7 @@ Or install it yourself as:
 
     $ gem install yahoo_countries_and_provinces
 
+
 ## Usage
 
     #require the file
@@ -31,3 +32,5 @@ Or install it yourself as:
     provinces_array = YahooCountriesAndProvinces::provinces("Germany", "en")
 
 
+## Regarding the language parameter
+Please read Yahoo's support section for the [internationalization](https://developer.yahoo.com/social/rest_api_guide/web-services-i18n.html)...
