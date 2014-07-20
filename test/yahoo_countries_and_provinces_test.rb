@@ -9,11 +9,11 @@ class YahooCountriesAndProvincesTest < Test::Unit::TestCase
     assert YahooCountriesAndProvinces::countries("de").include?("Kleinere Inselbesitzungen der Vereinigten Staaten")
   end
 
-  def test_get_state_baghdad_in_english
+  def test_get_province_baghdad_in_english
     assert YahooCountriesAndProvinces::provinces("Iraq", "en").include?("Baghdad")
   end
 
-  def test_get_state_stockholm_in_arabic
+  def test_get_province_stockholm_in_arabic
     assert YahooCountriesAndProvinces::provinces("Sweden", "ar").include?("ستوكهولم")
   end
 end

@@ -4,13 +4,13 @@ require 'json'
 module YahooCountriesAndProvinces
   class YahooProvinceList
     def initialize()
-      @states_array = []
+      @province_array = []
     end
 
     def provinces(country, language = "en")
       set_url(country, language)
 
-      @states_array.clear if @states_array.any?
+      @province_array.clear if @province_array.any?
       begin
         resp = Net::HTTP.get_response(URI.parse(@url))
         data = resp.body
@@ -19,11 +19,11 @@ module YahooCountriesAndProvinces
         raise "Could not get the data from yahoo's servers"
       end
 
-      result.each { |state|
-        @states_array << state['name']
+      result.each { |province|
+        @province_array << province['name']
       }
 
-      @states_array
+      @province_array
     end
 
     private
